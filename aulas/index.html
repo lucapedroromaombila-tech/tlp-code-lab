@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-ao">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            background-color:yellow;
+            color:cyan;
+        }
+        .container{
+            width: 290px;
+            height: 150px;
+            padding: 2em;
+            border: 3px solid #00ffff ;
+            margin: auto;
+        }
+        input{
+            border-style: solid;
+            border-width: 4px;
+            border-color: lawngreen;
+            border-bottom: darkmagenta;
+            border-radius: 6px;
+        }
+        button{
+            background-color:red;
+            border: 2px solid hsl(119, 83%, 34%);
+
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1 id="bout">qual é o seu nome?</h1>
+        <input type="text" name="" id="name" placeholder="nome completo">
+        <button onclick="hello()">ver nome</button>
+        <h2 id="retorno"></h2>
+    </div>
+
+<script>
+    let nome=document.getElementById('name').value;
+
+    function hello(){
+        let retorno= document.getElementById('retorno').innerHTML=nome
+    }
+</script>
+    <a href="ancora.html">ancora</a>
 </body>
 </html>
