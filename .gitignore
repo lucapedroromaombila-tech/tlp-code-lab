@@ -1,0 +1,25 @@
+# Sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# PHP: dependências
+/vendor/
+
+# Configurações e credenciais privadas
+.env
+.env.*
+!.env.example
+
+# Backups e ficheiros temporários
+*.log
+*.tmp
+*.bak
+
+# Bases de dados locais
+*.sqlite
+*.sqlite3
