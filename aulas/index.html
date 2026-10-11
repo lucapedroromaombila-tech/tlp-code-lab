@@ -1,52 +1,170 @@
+
 <!DOCTYPE html>
-<html lang="PT-ao">
+<html lang="pt-AO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Minha Apresentação</title>
 
     <style>
-        body{
-            background-color:yellow;
-            color:cyan;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .container{
-            width: 290px;
-            height: 150px;
-            padding: 2em;
-            border: 3px solid #00ffff ;
-            margin: auto;
-        }
-        input{
-            border-style: solid;
-            border-width: 4px;
-            border-color: lawngreen;
-            border-bottom: darkmagenta;
-            border-radius: 6px;
-        }
-        button{
-            background-color:red;
-            border: 2px solid hsl(119, 83%, 34%);
 
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #0a0a0c;
+            color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 35px 25px;
+            text-align: center;
+            background: #141417;
+            border: 1px solid #00f2fe;
+            border-radius: 16px;
+            box-shadow: 0 0 25px #00f2fe20;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            color: #00f2fe;
+            background: #00f2fe12;
+            border: 2px solid #00f2fe;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin-bottom: 12px;
+            font-size: 27px;
+        }
+
+        h1 span {
+            color: #00f2fe;
+        }
+
+        p {
+            margin-bottom: 25px;
+            color: #b5b5bd;
+            line-height: 1.6;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            color: white;
+            background: #0a0a0c;
+            border: 1px solid #38383f;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #00f2fe;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            color: #0a0a0c;
+            background: #00f2fe;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00cbd5;
+            transform: translateY(-2px);
+        }
+
+        #retorno {
+            margin-top: 22px;
+            color: #00f2fe;
+            font-size: 20px;
+            overflow-wrap: anywhere;
+        }
+
+        .rodape {
+            margin-top: 30px;
+            padding-top: 18px;
+            border-top: 1px solid #303036;
+            color: #777780;
+            font-size: 12px;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1 id="bout">qual é o seu nome?</h1>
-        <input type="text" name="" id="name" placeholder="nome completo">
-        <button onclick="hello()">ver nome</button>
-        <h2 id="retorno"></h2>
-    </div>
+    <main class="container">
 
-<script>
-    let nome=document.getElementById('name').value;
+        <div class="icon">👋</div>
 
-    function hello(){
-        let retorno= document.getElementById('retorno').innerHTML=nome
-    }
-</script>
-    <a href="ancora.html">ancora</a>
+        <h1>Olá, <span>visitante!</span></h1>
+
+        <p>
+            Bem-vindo à minha página de apresentação.
+            Escreve o teu nome abaixo para nos conhecermos melhor.
+        </p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Introduz o teu nome completo"
+            autocomplete="name"
+        >
+
+        <button onclick="hello()">Apresentar-me</button>
+
+        <h2 id="retorno" aria-live="polite"></h2>
+
+        <div class="rodape">
+            Feito com HTML, CSS e JavaScript
+        </div>
+
+    </main>
+
+    <script>
+        function hello() {
+            let nome = document.getElementById("name").value.trim();
+            let retorno = document.getElementById("retorno");
+
+            if (nome === "") {
+                retorno.textContent = "Por favor, escreve o teu nome.";
+                return;
+            }
+
+            retorno.textContent = `Prazer em conhecer-te, ${nome}!`;
+        }
+
+        document.getElementById("name").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                hello();
+            }
+        });
+    </script>
+
 </body>
 </html>
