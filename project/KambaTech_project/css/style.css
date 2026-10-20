@@ -1,86 +1,319 @@
+/* Configurações gerais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222222;
+    line-height: 1.6;
 }
 
-img{
-  width: 200px;
-}
-.cartao-icon img{
-  width: 50px;
+img {
+    max-width: 100%;
 }
 
-/* header area do cabecalho-site*/
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
 .cabecalho-site {
     width: 100%;
-    height: 7rem;
-    background-color: #0014cc;
+    min-height: 100px;
+    padding: 15px 5%;
+    background-color: #003b80;
     color: white;
-    font-size: 1.1rem;
-
-    display:flex;
-    position: sticky;
-    flex-direction:row;
-    flex-wrap:wrap;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* align-content:flex-end; */
+    flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logótipo */
+.container-logo img {
+    width: 180px;
+    height: auto;
 }
 
 .container-logo img:hover {
     transform: scale(1.04);
 }
-.container-logo > a > img{
-  flex-grow: 0;
-}
-.menu-navegacao{
-    display:block;
-    gap: 15px;
-}
+
+/* Menu de navegação */
 .menu-navegacao ul {
     display: flex;
+    flex-direction: row;
+    gap: 10px;
     list-style: none;
-    gap: 15px;
 }
-.menu-navegacao ul li {
-    background: #00aaff;
-    border: 1px solid #12bfef;
-    padding: 4px 10px;
+
+.menu-navegacao li {
+    padding: 8px 12px;
     border-radius: 5px;
 }
 
-.menu-navegacao li:hover{
-    background: #012f70d2;
-    color: #07e629;
-}
-.menu-navegacao a{
-    color: #f4f4f4;
+.menu-navegacao a {
+    color: white;
+    font-weight: bold;
 }
 
-/* main area do conteudo-principal */
-.conteudo-principal{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #f4f4f4;
-}
-.conteudo-principal > .apresentacao{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.menu-navegacao li:hover {
+    background-color: #0878d1;
 }
 
-/* rodape area ... */
+/* Conteúdo principal */
+.conteudo-principal {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+/* Apresentação inicial */
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.apresentacao-texto {
+    flex: 1;
+}
+
+.etiqueta {
+    color: #0878d1;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.apresentacao h1 {
+    color: #003b80;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.apresentacao-texto p {
+    margin-bottom: 15px;
+}
+
+.apresentacao-imagem {
+    flex: 1;
+}
+
+.apresentacao-imagem img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Botões */
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botão principal */
+.botao-principal {
+    background-color: #0878d1;
+    color: white;
+}
+
+.botao-principal:hover {
+    background-color: #003b80;
+}
+
+/* Botão secundário */
+.botao-secundario {
+    background-color: white;
+    color: #003b80;
+    border: 1px solid #003b80;
+}
+
+.botao-secundario:hover {
+    background-color: #e5f1ff;
+}
+
+/* Títulos das secções */
+.secao-servicos h2,
+.secao-sobre h2,
+.secao-contactos h2 {
+    color: #003b80;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Descrição das secções */
+.descricao-secao {
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+/* Secção de serviços */
+.secao-servicos {
+    margin-bottom: 35px;
+}
+
+/* Lista de serviços */
+.lista-servicos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Cartões dos serviços */
+.cartao-servico {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.cartao-servico:hover {
+    border-color: #0878d1;
+}
+
+/* Ícones dos serviços */
+.cartao-icon {
+    margin-bottom: 15px;
+}
+
+.cartao-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Títulos dos cartões */
+.cartao-servico h3 {
+    color: #003b80;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* Texto dos cartões */
+.cartao-servico p {
+    color: #555555;
+    font-size: 15px;
+}
+
+/* Secção Sobre Nós */
+.secao-sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    padding: 35px;
+    margin-bottom: 35px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Imagem Sobre Nós */
+.secao-sobre .apresentacao-imagem {
+    flex: 1;
+}
+
+.secao-sobre .apresentacao-imagem img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Texto Sobre Nós */
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+}
+
+/* Secção de contactos */
+.secao-contactos {
+    padding: 35px;
+    margin-bottom: 35px;
+
+    background-color: #e5f1ff;
+    border-radius: 10px;
+}
+
+.secao-contactos p {
+    margin-bottom: 15px;
+}
+
+/* RODAPE */
 .rodape-site {
     width: 100%;
-    background-color: #111111;
-    color: #cccccc;
-    padding: 20px 0;
+    padding: 35px 5% 15px;
+    background-color: #002653;
+    color: white;
+    text-align: center;
 }
 
+.rodape-site .container-logo img {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.rodape-site h2 {
+    margin-bottom: 20px;
+}
+
+.rodape-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 25px;
+}
+.rodape-links li {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.rodape-links a {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.rodape-links li:hover {
+    background-color: #0878d1;
+}
+
+.rodape-base {
+    border-top: 1px solid #41658b;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #d0dcec;
+}
