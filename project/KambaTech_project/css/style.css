@@ -8,7 +8,7 @@
 body {
     width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f5f5f6;
     color: #222222;
     line-height: 1.6;
 }
@@ -86,8 +86,9 @@ a {
     align-items: center;
     gap: 40px;
 
-    background-color: white;
-    padding: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.263), rgba(28, 28, 28, 0.299)), url('../images/content/pexels-elias-gamez-2002621-10558599.jpg') ;
+    background-size: cover;
+    padding: 80px;
     border-radius: 10px;
     margin-bottom: 35px;
 }
@@ -96,15 +97,15 @@ a {
     flex: 1;
 }
 
-.etiqueta {
-    color: #0878d1;
+.apresentacao-texto  , span {
+    color: rgb(16, 189, 242);
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
 .apresentacao h1 {
-    color: #003b80;
+    color: hsl(194, 100%, 64%);
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -112,6 +113,7 @@ a {
 
 .apresentacao-texto p {
     margin-bottom: 15px;
+    color:#f4f7fb;
 }
 
 .apresentacao-imagem {
@@ -126,8 +128,7 @@ a {
 }
 
 /* Botões */
-.botao-principal,
-.botao-secundario {
+.botao-principal , .botao-secundario {
     display: inline-block;
     padding: 10px 18px;
     margin-top: 10px;
@@ -139,7 +140,7 @@ a {
 
 /* Botão principal */
 .botao-principal {
-    background-color: #0878d1;
+    background-color: #0877d1d2;
     color: white;
 }
 
@@ -149,19 +150,18 @@ a {
 
 /* Botão secundário */
 .botao-secundario {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.705);
     color: #003b80;
     border: 1px solid #003b80;
 }
 
 .botao-secundario:hover {
-    background-color: #e5f1ff;
+    background-color: #003b80;
+    color: #e5f1ff;
 }
 
 /* Títulos das secções */
-.secao-servicos h2,
-.secao-sobre h2,
-.secao-contactos h2 {
+.secao-servicos h2 , .secao-sobre h2 , .secao-contactos h2 {
     color: #003b80;
     font-size: 28px;
     margin-bottom: 10px;
@@ -196,6 +196,7 @@ a {
 
 .cartao-servico:hover {
     border-color: #0878d1;
+    background-color: rgb(221, 219, 219);
 }
 
 /* Ícones dos serviços */
@@ -229,10 +230,11 @@ a {
     align-items: center;
     gap: 30px;
 
-    padding: 35px;
+    padding: 80px;
     margin-bottom: 35px;
 
-    background-color: white;
+    background: linear-gradient(rgba(27, 27, 27, 0.263), rgba(93, 91, 91, 0.121)), url('../images/content/pexels-dkomov-34803990.jpg');
+    background-size: cover;
     border-radius: 10px;
 }
 
@@ -254,6 +256,10 @@ a {
 
 .sobre-texto p {
     margin-bottom: 15px;
+    color: #f4f7fb;
+}
+.sobre-texto h2 {
+    color: hsl(194, 100%, 64%);
 }
 
 /* Secção de contactos */
@@ -261,7 +267,7 @@ a {
     padding: 35px;
     margin-bottom: 35px;
 
-    background-color: #e5f1ff;
+    background-color: #c5f0fbe5;
     border-radius: 10px;
 }
 
@@ -316,4 +322,14 @@ a {
     padding-top: 15px;
     font-size: 14px;
     color: #d0dcec;
+}
+
+
+
+ .secao-mensagem-final {
+    padding: 35px;
+    margin-bottom: 35px;
+
+    background-color: #c5f0fbe5;
+    border-radius: 10px;
 }
