@@ -325,9 +325,6 @@ a {
     font-size: 14px;
     color: #d0dcec;
 }
-
-
-
  .secao-mensagem-final {
     padding: 35px;
     margin-bottom: 35px;
@@ -335,3 +332,31 @@ a {
     background-color: #c5f0fbe5;
     border-radius: 10px;
 }
+
+/* fim */
+
+
+/*--------------------------------------*/
+     /*  STYLE DA PAG SERVISOS */
+/*--------------------------------------*/
+
+.secao-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    background-size: cover;
+    padding: 80px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+
+}
+
+.card-servico-img {
+    max-width: 20%;
+    border-radius: 8px;
+}
+
