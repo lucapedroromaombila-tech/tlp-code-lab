@@ -339,24 +339,3 @@ a {
 /*--------------------------------------*/
      /*  STYLE DA PAG SERVISOS */
 /*--------------------------------------*/
-
-.secao-servicos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-
-    background-size: cover;
-    padding: 80px;
-    border-radius: 10px;
-    margin-bottom: 35px;
-
-}
-
-.card-servico-img {
-    max-width: 20%;
-    border-radius: 8px;
-}
-
