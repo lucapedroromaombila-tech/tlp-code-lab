@@ -7,18 +7,18 @@
     <title>KambaTech | Contactos</title>
 </head>
 <body>
-<!-- CABEÇALHO -->
+
+    <!-- CABEÇALHO -->
     <div class="cabecalho-site" id="cabecalho-site">
         <div class="container-logo">
             <a href="index.html">
-                <img src="images/log/Logótipo KambaTech com Ícone de Reparação.png" alt="KambaTech log" />
+                <img src="images/log/Logótipo KambaTech com Ícone de Reparação.png" alt="Logótipo da KambaTech">
             </a>
         </div>
 
-        <!-- NAVEGAÇÃO -->
-       <div class="menu-navegacao">
+        <div class="menu-navegacao">
             <ul>
-                <li><a href="#cabecalho-site">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
                 <li><a href="contactos.html">Contactos</a></li>
@@ -27,14 +27,99 @@
     </div>
 
     <!-- CONTEÚDO PRINCIPAL -->
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
-     <br>
+    <div class="conteudo-principal">
+
+        <div class="apresentacao">
+            <div class="apresentacao-texto">
+                <p class="etiqueta">OS NOSSOS CONTACTOS</p>
+                <h1>Estamos aqui para ajudar.</h1>
+                <p>Tens dúvidas ou precisas de assistência informática? Consulta os nossos contactos ou deixa uma mensagem.</p>
+            </div>
+
+            <div class="apresentacao-imagem">
+                <img src="images/content/pexels-dkomov-34803990.jpg" alt="Técnico a trabalhar com equipamentos informáticos">
+            </div>
+        </div>
+
+        <!-- INFORMAÇÕES DE CONTACTO -->
+        <div class="secao-servicos">
+            <h2>Entra em contacto connosco</h2>
+            <p class="descricao-secao">Estamos disponíveis para esclarecer as tuas dúvidas e ajudar a resolver os teus problemas informáticos.</p>
+
+            <div class="lista-servicos">
+                <div class="cartao-servico">
+                    <div class="cartao-icon">
+                        <img src="images/icon/repair-tools.png" alt="Telefone">
+                    </div>
+                    <h3>Telefone</h3>
+                    <p>[Inserir número de telefone]</p>
+                </div>
+
+                <div class="cartao-servico">
+                    <div class="cartao-icon">
+                        <img src="images/icon/location.png" alt="WhatsApp">
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>[Inserir contacto de WhatsApp]</p>
+                </div>
+
+                <div class="cartao-servico">
+                    <div class="cartao-icon">
+                        <img src="images/icon/monitor-screen.png" alt="E-mail">
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>[Inserir endereço de e-mail]</p>
+                </div>
+
+                <div class="cartao-servico">
+                    <div class="cartao-icon">
+                        <img src="images/icon/location.png" alt="Localização">
+                    </div>
+                    <h3>Localização</h3>
+                    <p>[Inserir bairro, município e província]</p>
+                </div>
+
+                <div class="cartao-servico">
+                    <div class="cartao-icon">
+                        <img src="images/icon/settings.png" alt="Horário">
+                    </div>
+                    <h3>Horário de atendimento</h3>
+                    <p>[Inserir dias e horários de atendimento]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULÁRIO DE CONTACTO -->
+        <div class="secao-contactos">
+            <h2>Envia-nos uma mensagem</h2>
+            <p>Preenche os campos e descreve brevemente o problema ou serviço de que precisas.</p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Introduz o teu nome completo" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduz o teu endereço de e-mail" required>
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Qual é o assunto?" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreve o problema ou serviço de que precisas..." required></textarea>
+                </div>
+
+                <button type="submit" class="botao-principal">Enviar Mensagem</button>
+            </form>
+        </div>
+
+    </div>
 
     <!-- RODAPÉ -->
     <div class="rodape-site">
@@ -59,5 +144,6 @@
             <p>&copy; 2026 KambaTech. Projeto escolar de TLP.</p>
         </div>
     </div>
+
 </body>
 </html>
