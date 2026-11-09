@@ -1,58 +1,86 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assects/css/styles.css">
-    <title>paggina  de ajendamento</title>
+    <title>Agendamento | Barbearia Duran</title>
 </head>
 <body>
 
     <div class="wrapper">
         <header>
-            <h1>barbearia duran</h1>
+            <h1>Barbearia Duran</h1>
         </header>
 
         <aside class="nav">
-				<nav>
-                    <a href="index.html"><button>pagina inicial</button></a>
-                    <a href="pagPrecos.html"><button>ajendar serviços</button></a>
-                    <a href="pagReclamacao.html"><button>fazer reclamações</button></a>
-                </nav>
-		</aside>
+            <nav>
+                <a href="index.html"><button>Página Inicial</button></a>
+                <a href="pagPrecos.html"><button>Consultar Preçário</button></a>
+                <a href="pagReclamacao.html"><button>Fazer Reclamações</button></a>
+            </nav>
+        </aside>
 
         <article class="content">
-            <h2>fassa já o seu ajendamento</h2>
+            <h2>Agende já o seu atendimento!</h2>
+
+            <p>
+                Escolha a data e o serviço pretendido e faça o seu
+                agendamento de forma simples e rápida.
+                Estamos prontos para cuidar do seu estilo!
+            </p>
 
             <form method="post" action="api">
-                <label for="name">name:</label>
-                <input type="text" id="name" placeholder="seu nome aqui">
-                <label for="tel">namber:</label>
-                <input type="tel" id="tel" placeholder="seu numero de telefone">
-                <label for="data">dia:</label>
-                <input type="date" id="data">
-                <label for="namber">valor a pagar:</label>
-                <input type="number" id="namber" placeholder="o valor a ser pago">
-                <label for="">forma de pagamnto:</label>
-                <select>
-                    <option>spress</option>
-                    <option>paypay</option>
-                    <option>fisico</option>
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="nome"
+                    placeholder="Introduza o seu nome" required>
+
+                <label for="tel">Número de telefone:</label>
+                <input type="tel" id="tel" name="telefone"
+                    placeholder="Introduza o seu contacto" required>
+
+                <label for="data">Data do atendimento:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="servico">Serviço pretendido:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="corte">Corte de cabelo</option>
+                    <option value="barba">Aparar a barba</option>
+                    <option value="hidratacao">Hidratação capilar</option>
+                    <option value="completo">Corte e barba</option>
                 </select>
+
+                <label for="valor">Valor a pagar:</label>
+                <input type="number" id="valor" name="valor"
+                    placeholder="Valor em Kz" min="0">
+
+                <label for="pagamento">Forma de pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="express">Express</option>
+                    <option value="paypay">PayPay</option>
+                    <option value="fisico">Pagamento físico</option>
+                </select>
+
+                <button type="submit">Confirmar Agendamento</button>
             </form>
         </article>
 
         <aside class="banner">
-				<div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
-                <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
-                <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
-                <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
+            <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
+            <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
+            <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
+            <div><img src="assects/images/d83a879ef6a34c689cd0aaa89e475ed9.jpg"></div>
         </aside>
 
         <footer>
-            <h1>barbearia duran</h1>
-                        rodapé
+            <h1>Barbearia Duran</h1>
+            <p>Estilo, cuidado e confiança em cada corte.</p>
+            <p>&copy; 2026 Barbearia Duran. Todos os direitos reservados.</p>
         </footer>
     </div>
+
 </body>
 </html>

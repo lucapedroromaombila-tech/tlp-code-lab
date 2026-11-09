@@ -1,0 +1,208 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f8f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper > * {
+    padding: 1.5rem;
+}
+
+header, footer {
+    background-color: #236b50;
+    color: white;
+    text-align: center;
+}
+
+header h1, footer h1 {
+    font-size: 25px;
+}
+
+header p, footer p {
+    margin-top: 8px;
+}
+
+header {
+    border-bottom: 3px solid #e9c85b;
+}
+
+.nav {
+    background-color: #eaf1ec;
+    order: 1;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav button {
+    padding: 10px 15px;
+    background-color: #39785a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav button:hover {
+    background-color: #285c43;
+}
+
+article {
+    background-color: white;
+    flex: 1;
+    line-height: 1.6;
+}
+
+article h1, article h2 {
+    color: #236b50;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    border-left: 3px solid #e9c85b;
+    padding-left: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+article section {
+    margin-bottom: 25px;
+}
+
+article ul {
+    padding-left: 25px;
+}
+
+.banner {
+    background-color: #eaf1ec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    order: 2;
+}
+
+.banner img {
+    width: 110px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+footer {
+    order: 3;
+    border-top: 3px solid #e9c85b;
+}
+
+/* Formulários */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d1ddd4;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #39785a;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 11px;
+    background-color: #39785a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #285c43;
+}
+
+/* Tabelas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+
+th, td {
+    padding: 11px;
+    border: 1px solid #d1ddd4;
+}
+
+th {
+    background-color: #eaf1ec;
+    color: #236b50;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f8f5;
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    color: #236b50;
+}
+
+/* Ecrãs maiores */
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header, footer {
+        flex: 1 0 100%;
+    }
+
+    .nav, .banner {
+        order: 0;
+        flex: 1 0 20%;
+    }
+
+    article {
+        flex: 1 0 60%;
+    }
+
+    footer {
+        order: 1;
+    }
+}

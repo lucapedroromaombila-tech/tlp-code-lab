@@ -1,30 +1,82 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assects/css/styles.css">
-    <title>pagina de reclamação</title>
+    <title>Reclamações | Barbearia Duran</title>
 </head>
 <body>
-       <header>
-            <h1>barbearia duran</h1>
+
+    <div class="wrapper">
+        <header>
+            <h1>Barbearia Duran</h1>
         </header>
 
         <aside class="nav">
             <nav>
-                <a href="pagPrecos.html"><button>consultar preçario</button></a>
-                <a href="pagAjenda.html"><button>ajendar serviços</button></a>
-                <a href="index.html"><button>fazer reclamações</button></a>
+                <a href="index.html"><button>Página Inicial</button></a>
+                <a href="pagPrecos.html"><button>Consultar Preçário</button></a>
+                <a href="pagAjenda.html"><button>Agendar Serviços</button></a>
             </nav>
         </aside>
-<br>
-<br>
-<br>
+
         <article class="content">
-            <Lorem>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut asperiores non dolorem deleniti tempora libero. Odit corrupti iure totam exercitationem sunt eveniet incidunt sequi dicta inventore, laboriosam tenetur libero!
-                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Porro aut asperiores non dolorem deleniti tempora libero. Odit corrupti iure totam exercitationem sunt eveniet incidunt sequi dicta inventore, laboriosam tenetur libero!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut asperiores non dolorem deleniti tempora libero. Odit corrupti iure totam exercitationem sunt eveniet incidunt sequi dicta inventore, laboriosam tenetur libero!</p>
+            <h2>Reclamações e sugestões</h2>
+
+            <p>
+                Na Barbearia Duran, a opinião dos nossos clientes
+                é muito importante. Trabalhamos diariamente para
+                melhorar os nossos serviços e proporcionar um
+                atendimento de qualidade.
+            </p>
+
+            <p>
+                Se teve alguma experiência desagradável ou deseja
+                apresentar uma sugestão, utilize o formulário abaixo.
+                A sua opinião ajuda-nos a identificar problemas
+                e a melhorar o nosso atendimento.
+            </p>
+
+            <form method="post" action="api">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"
+                    placeholder="Introduza o seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Introduza o seu e-mail">
+
+                <label for="tipo">Tipo de mensagem:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="elogio">Elogio</option>
+                </select>
+
+                <label for="mensagem">Descreva a sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem"
+                    placeholder="Escreva aqui a sua reclamação ou sugestão..."
+                    rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <p>
+                Agradecemos a sua colaboração e confiança.
+                Estamos sempre disponíveis para melhorar!
+            </p>
         </article>
+
+        <footer>
+            <h1>Barbearia Duran</h1>
+            <p>Estilo, cuidado e confiança em cada corte.</p>
+            <p>&copy; 2026 Barbearia Duran. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
+

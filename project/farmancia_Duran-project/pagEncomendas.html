@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assects/css/style.css">
+    <title>Encomendas | Farmácia Mbila</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>Farmácia Mbila</h1>
+            <p>Saúde, confiança e bem-estar.</p>
+        </header>
+
+        <aside class="nav">
+            <nav>
+                <a href="index.html"><button>Página Inicial</button></a>
+                <a href="pagProdutos.html"><button>Catálogo de Produtos</button></a>
+                <a href="pagEncomendas.html"><button>Fazer Encomenda</button></a>
+                <a href="pagContactos.html"><button>Contactos</button></a>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <h2>Faça a sua encomenda</h2>
+
+            <p>
+                Escolha os produtos pretendidos e preencha
+                o formulário abaixo para solicitar a sua encomenda.
+            </p>
+
+            <form method="post" action="api">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"
+                    placeholder="Introduza o seu nome" required>
+
+                <label for="telefone">Número de telefone:</label>
+                <input type="tel" id="telefone" name="telefone"
+                    placeholder="Introduza o seu contacto" required>
+
+                <label for="categoria">Categoria do produto:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="medicamentos">Medicamentos</option>
+                    <option value="higiene">Produtos de higiene</option>
+                    <option value="primeiros-socorros">Primeiros socorros</option>
+                    <option value="cuidados-pessoais">Cuidados pessoais</option>
+                </select>
+
+                <label for="produto">Nome do produto:</label>
+                <input type="text" id="produto" name="produto"
+                    placeholder="Ex.: Sabonete, algodão..." required>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade"
+                    min="1" placeholder="Quantidade pretendida" required>
+
+                <label for="entrega">Tipo de levantamento:</label>
+                <select id="entrega" name="entrega" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="balcao">Levantamento na farmácia</option>
+                    <option value="entrega">Entrega ao domicílio</option>
+                </select>
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes"
+                    rows="4" placeholder="Informações adicionais..."></textarea>
+
+                <button type="submit">Enviar Encomenda</button>
+
+            </form>
+        </article>
+
+        <aside class="banner">
+            <div><img src="assects/images/farmacia.jpg" alt="Produtos farmacêuticos"></div>
+            <div><img src="assects/images/farmacia.jpg" alt="Medicamentos"></div>
+            <div><img src="assects/images/farmacia.jpg" alt="Produtos de higiene"></div>
+            <div><img src="assects/images/farmacia.jpg" alt="Cuidados pessoais"></div>
+        </aside>
+
+        <footer>
+            <h1>Farmácia Mbila</h1>
+            <p>Saúde e bem-estar ao seu alcance.</p>
+            <p>&copy; 2026 Farmácia Mbila. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
