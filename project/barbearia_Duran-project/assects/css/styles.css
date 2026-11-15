@@ -28,7 +28,7 @@ header h1, footer h1 {
 }
 
 .nav {
-    background-color: #eee;
+    background-color: rgb(236, 229, 229);
     order: 1;
 }
 
@@ -50,7 +50,8 @@ nav button:hover {
 }
 
 article {
-    background-color: white;
+    background-color: #1550f3;
+    color: white;
     order: 0;
     flex: 1;
 }
@@ -65,7 +66,7 @@ article p {
 }
 
 .banner {
-    background-color: #f2f2f2;
+    background-color: rgb(236, 229, 229);
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
