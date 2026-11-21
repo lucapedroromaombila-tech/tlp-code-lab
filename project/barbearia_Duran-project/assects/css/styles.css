@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-    color: #333;
+    color: #dcbf00;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -18,8 +18,8 @@
 }
 
 header, footer {
-    background-color: #222;
-    color: white;
+    background-color: #030303;
+    color: rgb(231, 243, 5);
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ header h1, footer h1 {
 }
 
 .nav {
-    background-color: rgb(236, 229, 229);
+    background-color: #030303;
     order: 1;
 }
 
@@ -40,18 +40,18 @@ nav {
 
 nav button {
     padding: 10px 15px;
-    background-color: #333;
-    color: white;
+    background-color: #616361cf;
+    color: rgb(231, 243, 5);
     cursor: pointer;
 }
 
 nav button:hover {
-    background-color: #555;
+    background-color: #07c304c3;
 }
 
 article {
-    background-color: #1550f3;
-    color: white;
+    background-color: #050506;
+    color: rgb(231, 243, 5);
     order: 0;
     flex: 1;
 }
@@ -66,7 +66,7 @@ article p {
 }
 
 .banner {
-    background-color: rgb(236, 229, 229);
+    background-color: #000093;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -95,7 +95,7 @@ form {
 
 input, select, textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #afe400;
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ textarea {
 form button {
     padding: 12px;
     background-color: #333;
-    color: white;
+    background-color: #050506;
     cursor: pointer;
 }
 

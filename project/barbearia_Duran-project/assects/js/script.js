@@ -55,11 +55,11 @@ if (formularioAgendamento) {
         const telefone = document.getElementById("tel").value.trim();
         const valor = Number(document.getElementById("valor").value);
 
-        if (!/^[0-9+\s()-]{9,20}$/.test(telefone)) {
-            evento.preventDefault();
-            alert("Introduza um número de telefone válido.");
-            return;
-        }
+        // if (!/^[0-9+\s()-]{9,20}$/.test(telefone)) {
+        //     evento.preventDefault();
+        //     alert("Introduza um número de telefone válido.");
+        //     return;
+        // }
 
         if (valor <= 0 || !Number.isFinite(valor)) {
             evento.preventDefault();

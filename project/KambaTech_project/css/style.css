@@ -1,4 +1,3 @@
-/* Configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +7,9 @@
 body {
     width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
-    color: #222222;
-    line-height: 1.6;
+    background-color: #eef3f9;
+    color: #000001;
+    line-height: 1.7;
 }
 
 img {
@@ -21,75 +20,77 @@ a {
     text-decoration: none;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
+
 .cabecalho-site {
     width: 100%;
     min-height: 100px;
-    padding: 15px 5%;
-    background-color: #003b80;
+    padding: 18px 5%;
+    background-color: #071b35;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: 3px solid #1689e8;
 }
 
-/* Logótipo */
 .container-logo img {
     width: 180px;
     height: auto;
+    transition: 0.3s;
 }
 
 .container-logo img:hover {
     transform: scale(1.04);
 }
 
-/* Menu de navegação */
 .menu-navegacao ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .menu-navegacao li {
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 9px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .menu-navegacao a {
-    color: white;
+    color: #f4f8ff;
     font-weight: bold;
 }
 
 .menu-navegacao li:hover {
-    background-color: #0878d1;
+    background-color: #1689e8;
 }
 
-/* Conteúdo principal */
+/* PÁGINA INICIAL */
+
 .conteudo-principal {
     width: 90%;
     max-width: 1200px;
-    margin: 35px auto;
+    margin: 40px auto;
 }
 
-/* Apresentação inicial */
 .apresentacao {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    margin-bottom: 35px;
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 14px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(7, 27, 53, 0.07);
 }
 
 .apresentacao-texto {
@@ -97,21 +98,24 @@ a {
 }
 
 .etiqueta {
-    color: #0878d1;
+    display: inline-block;
+    color: #1689e8;
     font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
 }
 
 .apresentacao h1 {
-    color: #003b80;
-    font-size: 36px;
+    color: #0968ed;
+    font-size: 38px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .apresentacao-texto p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    color: #47566a;
 }
 
 .apresentacao-imagem {
@@ -120,171 +124,237 @@ a {
 
 .apresentacao-imagem img {
     width: 100%;
-    max-height: 350px;
+    max-height: 370px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
-/* Botões */
-.botao-principal,
-.botao-secundario {
+.botao-principal, .botao-secundario {
     display: inline-block;
-    padding: 10px 18px;
-    margin-top: 10px;
+    padding: 12px 20px;
+    margin-top: 12px;
     margin-right: 8px;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-/* Botão principal */
 .botao-principal {
-    background-color: #0878d1;
+    background-color: #1689e8;
     color: white;
 }
 
 .botao-principal:hover {
-    background-color: #003b80;
+    background-color: #071b35;
+    transform: translateY(-2px);
 }
 
-/* Botão secundário */
 .botao-secundario {
-    background-color: white;
-    color: #003b80;
-    border: 1px solid #003b80;
+    background-color: #ffffff;
+    color: #0b4d88;
+    border: 1px solid #1689e8;
 }
 
 .botao-secundario:hover {
-    background-color: #e5f1ff;
+    background-color: #dceeff;
+    transform: translateY(-2px);
 }
 
-/* Títulos das secções */
 .secao-servicos h2,
 .secao-sobre h2,
 .secao-contactos h2 {
-    color: #003b80;
-    font-size: 28px;
-    margin-bottom: 10px;
+    color: #0e366a;
+    font-size: 29px;
+    margin-bottom: 12px;
 }
 
-/* Descrição das secções */
 .descricao-secao {
-    margin-bottom: 25px;
-    color: #555555;
+    margin-bottom: 28px;
+    color: #58677a;
 }
 
-/* Secção de serviços */
+/* SERVIÇOS */
+
 .secao-servicos {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
-/* Lista de serviços */
 .lista-servicos {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 22px;
 }
 
-/* Cartões dos serviços */
 .cartao-servico {
-    flex: 1;
+    flex: 1 1 300px;
     padding: 25px;
-    background-color: white;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #dce5ef;
+    border-radius: 12px;
+    box-shadow: 0 5px 16px rgba(7, 27, 53, 0.05);
+    transition: 0.3s;
 }
 
 .cartao-servico:hover {
-    border-color: #0878d1;
+    background-color: #023056;
+    border-color: #4be4ff;
+    box-shadow: 0 10px 22px rgba(22, 137, 232, 0.12);
+    transform: translateY(-5px);
 }
 
-/* Ícones dos serviços */
+.cartao-imagem {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.cartao-imagem img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .cartao-icon {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .cartao-icon img {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     object-fit: contain;
 }
 
-/* Títulos dos cartões */
 .cartao-servico h3 {
-    color: #003b80;
-    font-size: 19px;
-    margin-bottom: 10px;
+    color: #0b4d88;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
-/* Texto dos cartões */
 .cartao-servico p {
-    color: #555555;
+    color: #536276;
     font-size: 15px;
 }
 
-/* Secção Sobre Nós */
+.cartao-servico a {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+/* SOBRE NÓS */
+
 .secao-sobre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
-
-    padding: 35px;
-    margin-bottom: 35px;
-
-    background-color: white;
-    border-radius: 10px;
+    gap: 32px;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(7, 27, 53, 0.06);
 }
 
-/* Imagem Sobre Nós */
 .secao-sobre .apresentacao-imagem {
     flex: 1;
 }
 
 .secao-sobre .apresentacao-imagem img {
     width: 100%;
-    max-height: 300px;
+    max-height: 320px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Texto Sobre Nós */
 .sobre-texto {
     flex: 1;
 }
 
 .sobre-texto p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    color: #47566a;
 }
 
-/* Secção de contactos */
-.secao-contactos {
-    padding: 35px;
-    margin-bottom: 35px;
+/* CONTACTOS */
 
-    background-color: #e5f1ff;
-    border-radius: 10px;
+.secao-contactos {
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #dceeff;
+    border: 1px solid #c5e0fa;
+    border-radius: 14px;
 }
 
 .secao-contactos p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    color: #47566a;
 }
 
-/* RODAPE */
+.formulario-contacto {
+    margin-top: 28px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.campo-formulario label {
+    margin-bottom: 9px;
+    color: #0b4d88;
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c5d3e2;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #172334;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #1689e8;
+    box-shadow: 0 0 0 3px rgba(22, 137, 232, 0.12);
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    border: none;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+
 .rodape-site {
     width: 100%;
-    padding: 35px 5% 15px;
-    background-color: #002653;
+    padding: 40px 5% 18px;
+    background-color: #071b35;
     color: white;
     text-align: center;
+    border-top: 3px solid #1689e8;
 }
 
 .rodape-site .container-logo img {
     width: 160px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .rodape-site h2 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    color: #e8f4ff;
 }
 
 .rodape-links ul {
@@ -292,28 +362,124 @@ a {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 18px;
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
+
 .rodape-links li {
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 9px 13px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .rodape-links a {
-    color: white;
+    color: #f4f8ff;
     font-weight: bold;
-    border-radius: 5px;
 }
 
 .rodape-links li:hover {
-    background-color: #0878d1;
+    background-color: #1689e8;
 }
 
 .rodape-base {
-    border-top: 1px solid #41658b;
-    padding-top: 15px;
+    border-top: 1px solid #284568;
+    padding-top: 16px;
     font-size: 14px;
-    color: #d0dcec;
+    color: #b9cce0;
+}
+
+/* CHATBOT */
+
+.chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#abrir {
+    width: 65px;
+    height: 65px;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    background: #0d6efd;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+#abrir img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+#abrir:hover {
+    background: #08d6ff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.922);
+}
+
+#janela {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#janela h3 {
+    background-color: #0756b9;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+#fechar {
+    align-self: flex-end;
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(36, 197, 255);
+    border-radius: 10px;
+}
+
+#conversa {
+    flex: 1;
+    padding: 10px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+}
+
+#conversa p {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#janela input, #janela #enviar {
+    padding: 10px;
+    margin: 5px;
+}
+
+#janela input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#enviar {
+    background-color: #0756b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

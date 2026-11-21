@@ -1,37 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-AO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KambaTech | Contactos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        img{
+            width: 50px;
+        }
+    </style>
 </head>
 <body>
-<!-- CABEÇALHO -->
+
+    <!-- CABEÇALHO -->
     <div class="cabecalho-site" id="cabecalho-site">
         <div class="container-logo">
             <a href="index.html">
-                <img src="images/log/logotipo-write.svg" alt="KambaTech log" />
+                <img src="images/log/Logotipo.png" alt="Logótipo KambaTech">
             </a>
         </div>
 
         <!-- NAVEGAÇÃO -->
-       <div class="menu-navegacao">
+        <div class="menu-navegacao">
             <ul>
-                <li><a href="#cabecalho-site">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre-nos">Sobre Nós</a></li>
-                <li><a href="#contactos">Contactos</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
             </ul>
         </div>
     </div>
 
     <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo-principal">
+
+        <!-- APRESENTAÇÃO -->
+        <div class="apresentacao">
+            <div class="apresentacao-texto">
+                <span class="etiqueta">CONTACTOS</span>
+
+                <h1>Estamos aqui para ajudar.</h1>
+
+                <p>
+                    Tens dúvidas ou precisas de assistência informática?
+                    Consulta os nossos contactos ou deixa-nos uma mensagem.
+                </p>
+
+                <p>
+                    Estamos disponíveis para te ajudar a encontrar
+                    soluções para os teus problemas informáticos.
+                </p>
+            </div>
+
+            <div class="apresentacao-imagem">
+                <img src="images/content/pexels-elias-gamez-2002621-10558599.jpg"
+                     alt="Equipamentos informáticos utilizados para assistência técnica">
+            </div>
+        </div>
+
+        <!-- INFORMAÇÕES DE CONTACTO -->
+        <div class="secao-servicos">
+            <h2>Os nossos contactos</h2>
+
+            <p class="descricao-secao">
+                Entra em contacto connosco através dos seguintes meios.
+            </p>
+
+            <div class="lista-servicos">
+
+                <div class="cartao-servico">
+                    <img src="images/icon/phone-call.png">
+                    <h3>Telefone</h3>
+                    <p>
+                        [Inserir número de telefone]
+                    </p>
+                </div>
+
+                <div class="cartao-servico">
+                    <img src="images/icon/whatsapp-circle(1).png">
+                    <h3>WhatsApp</h3>
+                    <p>
+                        [Inserir contacto de WhatsApp]
+                    </p>
+                </div>
+
+                <div class="cartao-servico">
+                    <img src="images/icon/circle-envelope.png">
+                    <h3>E-mail</h3>
+                    <p>
+                        [Inserir endereço de e-mail]
+                    </p>
+                </div>
+
+                <div class="cartao-servico">
+                    <img src="images/icon/land-layer-location(1).png">
+                    <h3>Localização</h3>
+                    <p>
+                        [Inserir bairro, município e província]
+                    </p>
+                </div>
+
+                <div class="cartao-servico">
+                    <img src="images/icon/pending.png">
+                    <h3>Horário de atendimento</h3>
+                    <p>
+                        [Inserir dias e horários de atendimento]
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FORMULÁRIO DE CONTACTO -->
+        <div class="secao-contactos">
+            <h2>Envia-nos uma mensagem</h2>
+
+            <p>
+                Preenche os campos e descreve brevemente o problema
+                ou serviço de que precisas.
+            </p>
+
+            <form class="formulario-contacto">
+
+                <div class="campo-formulario">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome"
+                           placeholder="Digite o teu nome completo" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Digite o teu e-mail" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto"
+                           placeholder="Qual é o motivo do contacto?" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6"
+                              placeholder="Descreve aqui o teu problema ou pedido de assistência"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="botao-principal">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+        </div>
+
+        <!-- CHAMADA FINAL -->
+        <div class="secao-sobre">
+            <div class="sobre-texto">
+                <h2>Conta connosco.</h2>
+
+                <p>
+                    Estamos preparados para te ajudar a encontrar
+                    soluções para os teus problemas informáticos.
+                    Não deixes que um problema tecnológico
+                    atrapalhe os teus estudos ou o teu trabalho.
+                </p>
+
+                <p>
+                    A KambaTech está ao teu alcance.
+                </p>
+
+                <a href="servicos.html" class="botao-secundario">
+                    Conhecer os Serviços
+                </a>
+            </div>
+        </div>
+
+    </div>
 
     <!-- RODAPÉ -->
     <div class="rodape-site">
         <div class="container-logo">
             <a href="index.html">
-                <img src="images/log/logotipo-write.svg" alt="Logótipo da KambaTech">
+                <img src="images/log/Logotipo.png"
+                     alt="Logótipo da KambaTech">
             </a>
         </div>
 
@@ -50,5 +203,7 @@
             <p>&copy; 2026 KambaTech. Projeto escolar de TLP.</p>
         </div>
     </div>
+
 </body>
 </html>
+
